@@ -1,0 +1,22 @@
+﻿@model MersusProjeCore.Entity.Product
+@{
+    ViewBag.Title = "Ürün Detayı";
+}
+
+<h2>Ürün Detayi</h2>
+<div class="productBox">
+    <p class="tittle">@Model.Name</p>
+    <img src="@Model.ImageUrl" />
+
+    <p>
+        @Model.Brand
+    </p>
+    <p>
+        @Model.Price.ToString("##,## ₺")
+    </p>
+    <p>
+        @Model.Description
+    </p>
+    <a href="#" class="btn btn-default"><i class="bi bi-cart-check-fill"></i> Sepete Ekle</a>
+</div>
+
